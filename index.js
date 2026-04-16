@@ -21,6 +21,10 @@ function listaDeTarefas() {
     btnTrashEl.innerHTML = `<i class="fa-solid fa-trash"></i>`
     liEl.appendChild(btnTrashEl);
 
+    btnCheckEl.addEventListener("click", () => {
+        liEl.classList.toggle("checked")
+    })
+
     
 }
 
