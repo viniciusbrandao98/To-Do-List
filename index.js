@@ -13,7 +13,15 @@ function listaDeTarefas() {
     const liEl = document.createElement("li");
     liEl.innerText = novaTarefa;
     ulEle.appendChild(liEl);
-    input.value = ""
+    input.value = "";
+    const btnCheckEl = document.createElement("div")
+    btnCheckEl.innerHTML = `<i class="fa-solid fa-check-to-slot"></i>`
+    liEl.appendChild(btnCheckEl);
+    const btnTrashEl = document.createElement("div")
+    btnTrashEl.innerHTML = `<i class="fa-solid fa-trash"></i>`
+    liEl.appendChild(btnTrashEl);
+
+    
 }
 
 
