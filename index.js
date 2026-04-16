@@ -25,7 +25,9 @@ function listaDeTarefas() {
         liEl.classList.toggle("checked")
     })
 
-    
+    btnTrashEl.addEventListener("click", () => {
+        liEl.remove();
+    })
 }
 
 
