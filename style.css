@@ -17,8 +17,8 @@ body {
     width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
     border-radius: 8px;
-    background-color: goldenrod;
-  
+    background-color: #ffffff;
+    color: #1c1e21;
 }
 
 .campo-tarefa {
@@ -29,10 +29,11 @@ body {
     border: none;
     outline: none;
     font-size: 20px;
+    background-color: lightblue
 }
 
 .campo-tarefa::placeholder {
-    color: lightgray;
+    color: black
 }
 
 .lista-tarefas {
@@ -48,18 +49,28 @@ body {
 }
 
 .lista-tarefas li .fa-trash {
-    color: red;
+    color: #dc3545;
     position: absolute;
     right: 10px;
     top: 50%;
     cursor: pointer;
-    
+    transform: translateY(-50%);
 }
 
 .lista-tarefas li .fa-check-to-slot {
-    color: green;
+    color: #28a745;
     position: absolute;
     right: 28px;
     top: 50%;
     cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.lista-tarefas li.checked {
+    text-decoration: line-through;
+    color: brown;
+}
+
+.lista-tarefas li.checked .fa-check-to-slot {
+    color: brown;
 }
