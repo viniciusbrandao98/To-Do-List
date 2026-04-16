@@ -42,6 +42,24 @@ body {
 }
 
 .lista-tarefas li {
-    padding: 15px;
+    padding: 10px;
     border-top: dotted;
+    position: relative;
+}
+
+.lista-tarefas li .fa-trash {
+    color: red;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    cursor: pointer;
+    
+}
+
+.lista-tarefas li .fa-check-to-slot {
+    color: green;
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    cursor: pointer;
 }
